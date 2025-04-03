@@ -15,4 +15,9 @@ Jus run "curl -LsSf https://astral.sh/uv/install.sh | sh"
 -run "uv sync"
     -create a virtual python environment
     -can install packages in this virtual environment specific to the project
-    
+
+## install dependencies
+-run "uv add scikit-learn==1.2.2 pandas pyarrow"
+## dependencies only needed in development
+-run "uv add --dev jupyter seaborn"
+-run "uv run jupyter notebook" allows you to open juputer notebook in browser and ensure you have the right kernel
